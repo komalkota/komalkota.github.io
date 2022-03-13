@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Images Side by Side</h2>
+<p>How to create side-by-side images with the CSS float property:</p>
+
+<div class="row">
+  <div class="column">
+    <img src="http://triosdevelopers.com/~I.Atagayev/Web%20Fundamentals%20Final%20Project/images/img_5terre.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP3d_yiLY3o_Vli6J51CTTn2ck8u5yIKruuatJeHt_ci7AICdAQScddps9gXEgDRzGppM&usqp=CAU" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1b/2e/12/2c/caucasus-range-best-observed.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>
